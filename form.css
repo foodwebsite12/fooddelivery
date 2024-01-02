@@ -1,0 +1,96 @@
+body {
+    background: url('image/bulkfood.jpg');
+    background-position: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#0000006e;
+    border: 1px solid red;
+    border-radius: 20px;
+    width: 80vw;
+    height: 70vh;
+    margin: 107px auto;
+    line-height: 3rem;
+    box-shadow: 3px -3px 17px 11px black;
+}
+
+form h1 {
+    font-size: 6rem;
+    color: white;
+    transition: all 1s ease-in-out;
+    padding: 30px 0px;
+
+    background-color: rgba(38, 37, 37, 0.7);
+    border-radius: 30px;
+    box-shadow: 2px 0px 12px 5px #ff000091;
+}
+
+
+form input {
+    height: 55px;
+    width: 50vw;
+    margin: 5px auto;
+    border-radius: 10px;
+    background-color: rgb(235, 223, 223);
+    color: white;
+    background-color: #00000070;
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+}
+
+form button {
+    font-size: 2rem;
+    color: white;
+    height: 55px;
+    width: 50vw;
+    margin: 26px auto;
+    border-radius: 10px;
+    background-color: #8b00009c;
+    box-shadow: 1px 1px 17px 7px black;
+}
+
+@media screen and (max-width:780px) {
+    form {
+        width: 90vw;
+    }
+
+    form h1{
+        font-size: 5rem;
+    }
+
+
+    form input {
+        width: 80vw;
+        font-size: 1rem;
+    }
+
+    form button{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:540px) {
+    form h1{
+        font-size: 4rem;
+    }
+
+}
+
+@media screen and (max-width:431px) {
+    form h1{
+        font-size: 3rem;
+    }
+
+}
+
+@media screen and (max-width:330px) {
+    form h1{
+        font-size: 2rem;
+    }
+
+}

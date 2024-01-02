@@ -1,0 +1,57 @@
+/* nav */
+.btn{
+    font-size: 27px;
+    padding: 4px 8px;
+    box-shadow: -4px -4px 14px black
+}
+
+/* Home section */
+#home{
+ padding: 3px 6px;
+ padding-top: 110px;
+}
+
+#home::before{
+    height: 560px;
+}
+
+#home .mainheading{
+    font-size: 37px;   
+}
+
+#home p{
+    font-size: 20px;
+    font-weight:bolder;
+    color:aliceblue;
+}
+
+#home .p2{
+    display: none;
+}
+
+/* Contact us secction */
+
+#contact{
+    padding-top: 118px;
+}
+
+#contact-box form{
+    width: 80%;
+}
+
+#btn2{
+    margin-left: 19px;
+}
+
+/* footer */
+
+
+/* Utility classes */
+
+.h-primary{
+    font-size: 60px;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+}

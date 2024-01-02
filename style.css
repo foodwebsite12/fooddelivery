@@ -1,0 +1,602 @@
+/* css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+body {
+    font-family: serif;
+}
+
+nav {
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    align-items: center;
+    transition: all 1s ease-in-out;
+}
+
+nav #logo>img {
+    border: 2px solid black;
+    width: 100px;
+    border-radius: 72px;
+    transition: all 1s ease-in-out;
+}
+
+nav #logo>img:hover {
+    box-shadow: 10px 10px 33px 5px #0000008f;
+}
+
+/* search styling */
+nav form {
+    position: relative;
+    right: 15px;
+}
+
+nav input {
+    margin: 0px;
+    width: 234px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 5px solid black;
+    border-radius: 10px;
+    color: red;
+    transition: all 1s ease-in-out;
+}
+
+nav input::placeholder {
+    font-size: 1rem;
+    color: red;
+    transition: all 1s ease-in-out;
+}
+
+nav button {
+    position: relative;
+    left: -4px;
+    top: 2px;
+    height: 45px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: blue;
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav>.mainMenu {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    margin: 5px;
+    transition: all 1s ease-in-out;
+}
+
+nav .mainMenu li a:hover {
+    background-color: rgba(38, 37, 37, 0.7);
+    border-radius: 30px;
+    box-shadow: 2px 0px 12px 5px white;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+nav .mainMenu .closeMenu,
+.icons i:hover {
+    background-color: rgba(38, 37, 37, 0.7);
+    border-radius: 30px;
+    box-shadow: 2px 0px 12px 5px white;
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 200px;
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    background: url('image/foodorder.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+}
+
+/* #home::before {
+    content: "";
+    background: url('image/food\ order.jpg') no-repeat center/cover;
+    position: absolute;
+    top: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.6;
+} */
+
+#home h1 {
+    color: red;
+    font-family: math;
+    text-align: center;
+    background-color: rgba(38, 37, 37, 0.7);
+    border-radius: 30px;
+    box-shadow: 2px 0px 12px 5px white;
+    transition: all 1s  ease-in-out;
+}
+
+#home p {
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.5rem;
+    color: bisque;
+    background-color: #00000045;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(242, 155, 155);
+    color: azure;
+    font-weight: bolder;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+}
+
+/* Services Section */
+
+#services-container {
+    padding-top: 120px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-container h1 {
+    background-color: red;
+    border-radius: 30px;
+    box-shadow: 2px 0px 12px 5px black;
+    width: 80vw;
+    margin-bottom: 20px;
+}
+
+#services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#services .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 0px 15px;
+    width: 30%;
+    box-shadow: 10px 19px 20px -3px orange;
+}
+
+#services .box:hover {
+    background-color: rgb(233, 228, 228);
+}
+
+#services .box h2 {
+    margin: 0px;
+    font-size: 2rem;
+}
+
+/* bich me lane ke liye bahut useful hai bhai */
+#services .box img {
+    width: 384px;
+    height: 287px;
+    margin: 48px 13px;
+    box-shadow: 5px 5px 20px 7px black;
+    width: 72%;
+    border-radius: 20px;
+    transition: all 1s ease-in;
+}
+
+#services .box img:hover {
+    border: 2px solid;
+}
+
+#services .box p {
+    margin: 10px 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Client Section */
+
+#client-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('image/clients3.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 135px;
+    margin-top: 87px;
+    box-shadow: 5px 5px 10px 5px #0000008f;
+}
+
+/* #client-section::before{
+    content: "";
+    position: absolute;
+    background: url('image/bulkfood.jpg');
+    width: 100%;
+    height: 74%;
+    z-index: -1;
+    opacity: 1;
+} */
+#client-section h1 {
+    color: greenyellow;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 90px;
+    font-family: emoji;
+    width: 90vw;
+    height: 117px;
+    text-align: center;
+    background-color: #ed143dba;
+    border-radius: 30px;
+    box-shadow: 2px 0px 12px 5px white;
+}
+
+#clients {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#clients .client-item {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: all 1s ease-in-out;
+}
+
+#clients img {
+    width: 100%;
+    transition: all 1s ease-in-out;
+    background-color: antiquewhite;
+    box-shadow: 4px 8px 11px 10px black;
+    border-radius: 20px;
+}
+
+
+/* #contact-section */
+
+#contact {
+    position: relative;
+    background-image: url('image/contact.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-top: 153px;
+    font-size: 3rem;
+}
+
+/* #contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1;
+    background: url('image/contact.jpg') no-repeat center center/cover;
+} */
+
+#contact>h1 {
+    color: blue;
+    background-color: rgb(38 37 37 / 6%);
+    border-radius: 11px;
+    margin: 0px 10px;
+    box-shadow: 2px 0px 12px 5px white;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 2.3rem;
+}
+
+#btn2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#button {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: beige;
+    background-color: blue;
+    padding: 10px 78px;
+    margin: 18px 168px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 1px 0px 16px 10px white;
+    transition: all 1s ease-in-out;
+}
+
+#button:hover {
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 12px;
+    background-color: rgb(244, 245, 247);
+    color: white;
+    border-radius: 20px;
+}
+
+.h-secondary {
+    color: brown;
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+@media (max-width:1265px) {
+    nav .mainMenu li a {
+        padding: 15px 0px;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:965px) {
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: url('image/tastyfood.jpg');
+        transition: right 1s ease;
+        display: none;
+    }
+
+
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: red;
+        font-size: 3.6rem;
+        font-weight: bolder;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .icons i:hover {
+        font-size: 3rem;
+        color: black;
+    }
+
+    nav form {
+        position: absolute;
+        right: 55px;
+    }
+
+    nav input {
+        width: 245px;
+    }
+
+}
+
+@media screen and (max-width:795px) {
+
+    /* services-container */
+    #services-container {
+        width: 95vw;
+        margin: 0px auto;
+    }
+
+    #services {
+        flex-direction: column;
+    }
+
+    #services .box {
+        width: 88%;
+        margin: 15px 10px;
+    }
+
+    /* client section  */
+
+    #client-section h1 {
+        font-size: 70px;
+        width: 90vw;
+        margin-top: -133px;
+    }
+
+    #clients {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:660px) {
+
+    #contact-box input,
+    #contact-box textarea {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:510px) {
+    nav {
+        height: 156px;
+    }
+
+    nav #logo img {
+        width: 60px;
+        position: relative;
+        top: -41px;
+    }
+
+    nav .openMenu {
+        position: relative;
+        top: -51px;
+        right: -12px;
+    }
+
+    nav form {
+        flex-direction: row;
+        top: 83px;
+        right: 2px;
+    }
+
+    nav input {
+        position: relative;
+        left: -36px;
+        width: 57vw;
+    }
+
+    nav input::placeholder {
+        font-size: 1rem;
+    }
+
+    nav button {
+        top: -1px;
+        left: -39px;
+        width: 75px;
+        height: 38px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    #services .box img {
+        height: 221px;
+        width: 88%;
+    }
+
+    #client-section h1 {
+        height: 154px;
+        font-size: 56px;
+        color: whitesmoke;
+        background-color: #ed143dab;
+    }
+
+    #contact-box input,#contact-box textarea {
+        font-size: 0.8rem;
+    }
+
+    #contact {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width:300px) {
+    nav form{
+        display: flex;
+        flex-direction: column;
+        top: 71px;
+    }
+    nav input {
+        position: relative;
+        left: -3px;
+        width: 93vw;
+    }
+
+    nav form button{
+        width: 72vw;
+        left: 31px;
+    }
+}
